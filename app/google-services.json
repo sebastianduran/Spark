@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1091684889603",
+    "firebase_url": "https://spark16-29db6.firebaseio.com",
+    "project_id": "spark16-29db6",
+    "storage_bucket": "spark16-29db6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091684889603:android:4216c3f07d0090ee",
+        "android_client_info": {
+          "package_name": "com.example.spark16"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091684889603-p59ip83bibgb66c0bsbm3bphkdgt21si.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.spark16",
+            "certificate_hash": "ba9c31d889672c8ccaf9ec09ca0a850f9ffe684f"
+          }
+        },
+        {
+          "client_id": "1091684889603-otj93ukg8iog0mfa14vspa6raon2ugo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1sMwCP8L5tRh1rzPkptLvR5GpU2lKZ3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091684889603-otj93ukg8iog0mfa14vspa6raon2ugo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

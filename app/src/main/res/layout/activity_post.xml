@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".PostActivity">
+
+    <include
+        android:id="@+id/update_post_page_toolbar"
+        layout="@layout/app_bar_layout" />
+
+
+
+    <ImageButton
+        android:id="@+id/select_post_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="55dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/select_image" />
+
+    <EditText
+        android:id="@+id/post_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="169dp"
+        android:background="@drawable/inputs"
+        android:hint="Escribe algo sobre la imagen"
+        android:inputType="textMultiLine"
+        android:textColorHint="#0000ff" />
+
+    <Button
+        android:id="@+id/update_post_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/button"
+        android:text="Actualizar estado" />
+
+
+</RelativeLayout>

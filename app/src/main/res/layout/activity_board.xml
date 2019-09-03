@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".BoardActivity">
+
+    <include
+        android:id="@+id/update_post_page_toolbar"
+        layout="@layout/app_bar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/view_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#aaaaaa">
+
+        <ImageView
+            android:id="@+id/image_fondo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff" />
+
+        <ImageView
+            android:id="@+id/image_arrow_up"
+            android:layout_width="44dp"
+            android:layout_height="43dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="209dp"
+            android:src="@drawable/servomotores" />
+
+        <ImageView
+            android:id="@+id/image_arrow_left"
+            android:layout_width="44dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/image_arrow_up"
+            android:src="@drawable/flechaderecha" />
+
+        <ImageView
+            android:id="@+id/image_arrow_right"
+            android:layout_width="44dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/image_arrow_up"
+            android:src="@drawable/flechaabajo" />
+
+
+        <ImageView
+            android:id="@+id/image_arrow_down"
+            android:layout_width="44dp"
+            android:layout_height="43dp"
+            android:layout_alignTop="@+id/image_arrow_left"
+            android:src="@drawable/resistencia" />
+
+
+        <ImageView
+            android:id="@+id/image_arduino"
+            android:layout_width="44dp"
+            android:layout_height="43dp"
+            android:layout_above="@+id/image_arrow_up"
+            android:src="@drawable/nodenmcu" />
+
+        <ImageView
+            android:id="@+id/image_servo"
+            android:layout_width="44dp"
+            android:layout_height="43dp"
+            android:layout_above="@+id/image_arrow_up"
+            android:src="@drawable/tarjetarduino" />
+
+
+        <ImageView
+            android:id="@+id/image_nema"
+            android:layout_width="44dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/image_arrow_up"
+            android:src="@drawable/flechaizquierda" />
+
+        <EditText
+            android:id="@+id/post_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="127dp"
+            android:background="@drawable/inputs"
+            android:hint="Escribe algo sobre la imagen"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="#0000ff" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp">
+
+            <Button
+                android:id="@+id/capture_sol"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+
+                android:text="Captura solucion"
+                android:textColor="@color/colorAccent"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/update_post_button"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gallery"
+                android:text="Publicar Solucion"
+                android:textColor="@color/colorAccent"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/gallery"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/capture_sol"
+                android:text="Elegir de galeria"
+                android:textColor="@color/colorAccent"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/problema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="161dp"
+            android:text="escriba la problematica que esta atacando y la solucion que usted nos ofrece"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
